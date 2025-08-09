@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>光影摄影工作室 | 捕捉生活中的美好瞬间</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- 引入Font Awesome图标（可选） -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="logo">光影摄影</div>
+    <ul class="nav-links">
+      <li><a href="#home">首页</a></li>
+      <li><a href="#works">作品展示</a></li>
+      <li><a href="#about">关于我们</a></li>
+      <li><a href="#contact">预约咨询</a></li>
+    </ul>
+  </nav>
+
+  <!-- 首页横幅 -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>用镜头讲述你的故事</h1>
+      <button class="btn" onclick="scrollToSection('works')">查看作品</button>
+    </div>
+  </section>
+
+  <!-- 作品展示区 -->
+  <section id="works" class="gallery">
+    <h2>精选作品</h2>
+    <div class="gallery-container">
+      <!-- 作品图片（后续用JS动态加载或直接写死） -->
+      <div class="gallery-item">
+        <img src="images/work1.jpg" alt="人像摄影作品">
+        <p>人像系列 | 捕捉自然表情</p>
+      </div>
+      <!-- 更多作品... -->
+    </div>
+  </section>
+
+  <!-- 关于我们 -->
+  <section id="about" class="about">
+    <h2>关于光影</h2>
+    <p>我们是一支热爱摄影的团队，专注于人像、婚礼、商业摄影...（工作室介绍）</p>
+  </section>
+
+  <!-- 预约咨询 -->
+  <section id="contact" class="contact">
+    <h2>预约拍摄</h2>
+    <form id="booking-form">
+      <input type="text" placeholder="姓名" required>
+      <input type="tel" placeholder="电话" required>
+      <select required>
+        <option value="">拍摄类型</option>
+        <option>人像</option>
+        <option>婚礼</option>
+      </select>
+      <button type="submit" class="btn">提交预约</button>
+    </form>
+  </section>
+
+  <!-- 页脚 -->
+  <footer>
+    <p>© 2024 光影摄影工作室 | 电话：123-4567-8910</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

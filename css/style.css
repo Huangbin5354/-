@@ -1,0 +1,69 @@
+/* 基础样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* 导航栏 */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #000;
+    color: white;
+  }
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* 首页横幅 */
+  .hero {
+    height: 80vh;
+    background: url('../images/hero-bg.jpg') center/cover; /* 用一张大气的摄影作品做背景 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  .btn {
+    padding: 12px 24px;
+    background: #ff4757;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  /* 作品展示 */
+  .gallery {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+  }
+  .gallery-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* 保持图片比例，裁剪多余部分 */
+    transition: transform 0.3s;
+  }
+  .gallery-item:hover img {
+    transform: scale(1.05); /* 悬停放大效果 */
+  }
